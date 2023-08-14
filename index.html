@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="title-container">
+    <h1>Name Randomizer</h1>
+    <p>Just add names and click "Randomize Names!"</p>
+  </div>
+
+  <div id="name-container">
+    <span class="random-icon">🦄</span>
+    Random Name
+  </div>
+
+  <div id="randomize-btn-container">
+    <button id="randomize-btn" onclick="startRandomization()">🎉 Randomize Names 🎉</button>
+    <button id="stop-btn" onclick="stopRandomization()">🛑 Stop</button>
+  </div>
+
+  <div id="add-name-container">
+    <table>
+      <tr>
+        <td><textarea id="name-input" placeholder="Enter names, each on a new line"></textarea></td>
+        <td><button onclick="addName()">Add Names</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="name-list-container">
+    <ul id="name-list"></ul>
+  </div>
+  
+  <div id="name-list-actions">
+    <button onclick="saveNameList()">Save List</button>
+    <button onclick="loadNameList()">Load List</button>
+  </div>
+
+  <div id="saved-lists">
+    <select id="name-list-dropdown" onchange="loadSelectedList()">
+      <option value="">Select a saved list</option>
+    </select>
+    <button id="delete-button" onclick="deleteSelectedList()" style="display: none;">Delete List</button>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>

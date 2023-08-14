@@ -1,0 +1,207 @@
+:root {
+    --primary-color: #007bff; /* School mode primary color */
+    --secondary-color: #dc3545; /* School mode secondary color */
+  }
+    
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #title-container {
+    text-align: center;
+    margin-top: 50px; /* Adjust the margin-top value to position the title */
+  }
+  
+  #title-container h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333; /* Adjust the color to your preference */
+  }
+  
+  #title-container p {
+    font-size: 1.2em;
+    color: #555; /* Adjust the color to your preference */
+  }
+  
+  /* Add a cute background and border for the randomize name results */
+  #name-container {
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffda08dc; /* Cute pink background */
+    border: 10px solid #989b00; /* Cute pink border */
+    border-radius: 10px; /* Rounded border edges */
+    width:  800px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    margin: 10px; /* Add some margin to separate from other elements */
+  }
+  
+  /* Add a new container for the name list with scroll functionality */
+  #name-list-container {
+    max-height: 200px; /* Set the maximum height to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrolling when names exceed the container height */
+    margin-top: 10px; /* Add some margin at the top */
+  }
+  
+  #add-name-container {
+    margin-top: 20px;
+  }
+  
+  #add-name-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+
+  
+/* Add styles for the add name button */
+#add-name-container button {
+    padding: 5px 20px; /* Increase the padding to create more space around the button text */
+    font-size: 1em;
+    background-color: #28a745; /* Green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px; /* Add some margin to separate the input and the add name button */
+  }
+  
+  /* Adjust the width of the table columns to make the input and button fit properly */
+  #add-name-container td {
+    padding: 5px;
+  }
+  
+  #add-name-container input[type="text"] {
+    width: 100%; /* Set the input field to occupy the entire available width */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Center the button within the table cell */
+  #add-name-container td:last-child {
+    text-align: center;
+  }
+  
+  #name-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #name-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .remove-name {
+    cursor: pointer;
+    color: #dc3545;
+    margin-left: 10px;
+  }
+
+  /* Rest of the CSS styles remain the same */
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: "Roboto", Arial, sans-serif; /* Use Roboto font */
+  }
+
+  #randomize-btn-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Update the styles for the randomize button */
+  .school-mode #randomize-btn,
+  .work-mode #randomize-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Add some space between the buttons */
+  }
+  
+  /* Update the styles for the stop button */
+  .school-mode #stop-btn,
+  .work-mode #stop-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  
+  /* Add styles for the random icons */
+  .random-icon {
+    font-size: 1.5em;
+    margin-right: 5px; /* Add some space between the icon and the name */
+  }
+
+  #randomize-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Add some space between the buttons */
+  }
+  
+  /* Update the styles for the stop button */
+  #stop-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+/* Add styles for the "Delete" buttons */
+#delete-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+  }
+  
+  #delete-buttons button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 0.9em;
+  }
